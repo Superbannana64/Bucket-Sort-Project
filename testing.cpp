@@ -1,4 +1,4 @@
-#include "bucketSort.h" //For the bucketSort and rest of include statements
+#include "bucketSorting.h" //For the bucketSort and rest of include statements
 #include <chrono>  // for microseconds
 
 using namespace std::chrono;
