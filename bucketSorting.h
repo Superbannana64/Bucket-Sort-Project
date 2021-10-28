@@ -14,11 +14,11 @@ int compare(const void* first, const void* second) //A function to compare two p
     {
         return 0;
     }
-    else if (x < y) //If x is less than y then swap so less->greater
+    else if (x < y) //If x is less than y
     {
         return -1;
     }
-    else //Otherwise if x is greater then y then swap so less->greater
+    else //Otherwise if x is greater then y
     {
         return 1;
     }
@@ -26,8 +26,8 @@ int compare(const void* first, const void* second) //A function to compare two p
 
 struct bucket
 {
-    int count;
-    int* value;
+    int count;  //Counts how many numbers in the bucket
+    int* value; //Values of arr[]
 };
 
 void bucketSort(int arr[], int sizeOfArray)
@@ -37,7 +37,7 @@ void bucketSort(int arr[], int sizeOfArray)
     struct bucket buckets[3]; //Creates 3 objects of struct buckets
 
     int i, j, h, high, low;
-    high = 20;
+    high = 10;
     low = 0;
 
     for (i = 0; i < numOfBuckets; i++) //runs through and sets up each bucket's count and value before it gets filled
